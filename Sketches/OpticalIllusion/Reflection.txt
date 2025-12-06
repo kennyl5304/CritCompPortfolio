@@ -1,0 +1,5 @@
+I had an idea based on the "Impossible Trident" illusion.
+I hard coded the design and turned the code into a separate function that takes in starting coordinates as the parameters.
+Needing to use nested for loops, I decided to just make a grid design using the tridents.
+I also wanted to add some movement to the image, so I used a constrained sine function to create a pulsing effect by dynamically modifying the stroke weight according to the frame count.
+I also added some perlin noise smoke, though it caused a fair bit of issues by crashing my pc.

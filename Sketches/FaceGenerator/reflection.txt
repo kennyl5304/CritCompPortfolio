@@ -1,0 +1,14 @@
+
+KeyPressed Variables: Face color
+Mouse Position Variables: Eye color, face shape, eyebrow shape, mouth shape, 
+MousePressed variables: Eye shape
+
+For this assignment, I drew influence from my custom character in the video game Peak. My approach to this was hard coding the face (see default.PNG), and then focusing on adding scalable interactions to each facial feature as needed. I wrote down a list of which features I wanted to correspond with the following interactions. I wanted to change the face color using KeyPressed, use MousePressed to alter the size of the pupils, and the rest to be tied with the mouse position.
+
+The facial dimensions were the easiest to account for, as it was simply using the mouse position as parameters for the width and height of the head. The eyebrows probably took the most trial and error to get right, as they involved bezier curves, which meant I had to also account for the positions of the anchor points and keep them proportional to the eyes. After a lot of testing, I decided to use a sin function to create a smoother transition between eyebrow positions.
+
+The main challenge I had was to play around with the mouse positions so the face would at least have a minimal width and height. I also wanted the eyes and mouth to adjust their positions depending on how big or small the face is, so it took many if statements and constrain functions to get right.
+
+*Note: the keyPressed() function worked entirely fine before I added everything else, but now it stopped getting called entirely, so I moved its functionallity to the mousePressed() for the time being.
+
+*Note#2: After much debugging, the eyebrows() function seemed to be the culprit of the keyPressed() issue. Commenting it out of draw() restored functionallity to KeyPressed(). Determined to find out the issue, I ended up commenting out pretty much the entire function, and all of a sudden, keyPressed() wouldn't work at all again. Without much answers to this issue, I cede victory to the jaws of the keyPressed().

@@ -1,0 +1,2 @@
+I ended up going a more direct route and creating a scene of changing seasons, with shifting weather and dynamic leaves. Having grown up in NYC in the 2000s, where the weather was more varied each season, the temperature and frequency of storms became my way of sensing the progression of time. This effect is a bit more muted lately though, with less variation in temperature in the city.
+It was nice to play around with creating objects and finding a way to create a more fluid animation for the weather effects.
